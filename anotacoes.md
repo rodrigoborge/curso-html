@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Anotações - Módulo 01</h1>
-    <h2>TAGs</h2>
+    <h1>TAGs</h1>
     <p>! → Indicar que o documento é um HTML</p>
     <p>&lt;h1&gt; → Título 01</p>
     <p>&lt;hr&gt; → Linha horizontal</p>
@@ -34,23 +34,23 @@
     <p>ol → Lista ordenada</p>
     <p>ul → Lista não ordenada</p>
     <p>li → Listar</p>
-    <h2>Links</h2>
+    <h1>Links</h1>
     <p>link interno ou externo → a</p>
     <p>target="_blank" → Abrir link em uma nova aba</p>
     <p>rel="external" → Referência externa</p>
     <p>../ → Voltar para pasta anterior</p>
-    <h2>Simbolos</h2>
+    <h1>Simbolos</h1>
     <p>Para escrever simbolos no código como &lt;, &gt;, &amp;, &cent;... Pesquisar por <a href="https://www.w3schools.com/html/html_entities.asp">HTML Entities</a>. </p>
-    <h2>Imagens</h2>
+    <h1>Imagens</h1>
     <p>JPEG → Mais leve</p>
     <p>PNG → Transparência</p>
     <p>GIF → Transparência + Animação</p>
-    <h2>Atalhos do Visual Code</h2>
+    <h1>Atalhos do Visual Code</h1>
     <p>ctrl+shift+P → Insere a TAG no texto selecionado</p>
     <ul>
         <li>Para configurar precisa ir em pesquisar e procurar por Emmet: <em>Wrap With Abbreviation</em></li>
     </ul>
-    <h2>Imagens Dinâmicas</h2>
+    <h1>Imagens Dinâmicas</h1>
     <p>&lt;picture&gt; → Para informar o espaçõ de imagem</p>
     <p>Source Media Yype → Para informar os tipos e tamanhos de imagenss</p>
     <p>As mídias precisam ser inseridas em ordem, da menor para a maior, sendo que a maior (padrão) ficará na Tag principal &lt;img&gt;</p>
@@ -64,18 +64,18 @@
     &lt;/picture&gt;
         </code>
     </pre>
-    <h2>Áudios</h2>
+    <h1>Áudios</h1>
     <p>&lt;audio&gt; → TAG para inserção de um arquivo direto</p>
     <p>controls → Inserir ao lado e dentro da TAG audio para exibir o player dentro do site</p>
     <p>source:src → Para a inserção de várias extensões de audio para maior compatibilidade de navegadores</p>
     <h2>Exemplos:</h2>
-    <h4>Para inserção de um áudio</h4>
+    <h3>Para inserção de um áudio</h3>
 <pre>
 <code>
     &lt;audio src="midia/Calvin Harris - josh pan.mp3" controls &gt;&lt;/audio&gt;
 </code>
 </pre>
-    <h4>Para inserção de várias extenções</h4>
+    <h3>Para inserção de várias extenções</h3>
 <pre>
 <code>
     &lt;audio preload="metadata" controls&gt;
@@ -93,13 +93,13 @@
     <p>width → Para definir o tamanho do vídeo na página</p>
 
     <h2>Exemplos:</h2>
-    <h4>Para inserção de um único vídeo - Servidor próprio</h4>
+    <h3>Para inserção de um único vídeo - Servidor próprio</h3>
 <pre>
 <code>
     &lt;video poster="imagens/thumb.png" controls src="media/pexels-artem-podrez-7233556.mp4" width="560"&gt;&lt;/video&gt;
 </code>
 </pre>
-<h4>Para inserção de várias extensões de vídeos - Servidor próprio</h4>
+<h3>Para inserção de várias extensões de vídeos - Servidor próprio</h3>
 <pre>
     <code>
     &lt;video width="560" poster="imagens/thumb.png" controls&gt;
