@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-</head>
 <body>
     <h1>Anotações - Módulo 01</h1>
     <h1>TAGs</h1>
@@ -110,5 +102,37 @@
     &lt;/video&gt;
     </code>
 </pre>
+    <h1>CSS</h1>
+    <h2>Páginas Únicas</h2>
+    <p>Para incluir os estilos CSS o ideal - para páginas únicas - é inserir a tag logo abaixo do título, antes de fechar a seção head</p>
+    <p>A tag é aberta com &lt;style&gt; e abaixo dela é declarado o nome da seção e é aberta uma chave {, com isso começamos a digitar os valores dos estilos, como por exemplo:</p>
+    <pre>
+    <code>
+    &lt;style&gt;
+    body&lcub;
+        background-color&colon; darkturquoise;
+        font-family&colon; sans-serif&semi;
+        font-size&colon; 20px&semi;
+    &rcub;
+    h1&lcub;
+        color&colon; dodgerblue;
+        background-color&colon; ghostwhite&semi;
+    &rcub;
+    h2&lcub;
+        color&colon; forestgreen&semi;
+    &rcub;
+    p&lcub;
+        text-align&colon; justify&semi;
+    &rcub;
+    &lt;/style&gt;
+    </code>
+</pre>
+    <h2>Várias Páginas</h2>
+    Usar a tag <strong>link:css</strong>, clicar em cima do link de página criado e criar uma nova página com base nele. A tag ficará assim
+    <pre>
+        <code>
+    &lt;link rel="stylesheet" href="style.css"&gt;
+        </code>
+    </pre>
+    <p>Com isso já podemos inserir os estilos dentro da folha de estilos e ela passará a valer para todas as páginas que contenham a referência.</p>
 </body>
-</html>
