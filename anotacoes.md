@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
 <body>
     <h1>Anotações - Módulo 01</h1>
     <h2>TAGs</h2>
@@ -42,5 +50,64 @@
     <ul>
         <li>Para configurar precisa ir em pesquisar e procurar por Emmet: <em>Wrap With Abbreviation</em></li>
     </ul>
+    <h2>Imagens Dinâmicas</h2>
+    <p>&lt;picture&gt; → Para informar o espaçõ de imagem</p>
+    <p>Source Media Yype → Para informar os tipos e tamanhos de imagenss</p>
+    <p>As mídias precisam ser inseridas em ordem, da menor para a maior, sendo que a maior (padrão) ficará na Tag principal &lt;img&gt;</p>
+    <p>Então o código ficará assim:</p>
+    <pre>
+        <code>
+    &lt;picture&gt;
+        &lt;source media="(max-width: 750px)" srcset="imagens/foto-p.jpg" type="image/jpg"&gt;
+        &lt;source media="(max-width: 1050px)" srcset="imagens/foto-m.jpg" type="image/jpg"&gt;
+        &lt;img src="imagens/foto-g.jpg" alt="Imagem flexível"&gt;
+    &lt;/picture&gt;
+        </code>
+    </pre>
+    <h2>Áudios</h2>
+    <p>&lt;audio&gt; → TAG para inserção de um arquivo direto</p>
+    <p>controls → Inserir ao lado e dentro da TAG audio para exibir o player dentro do site</p>
+    <p>source:src → Para a inserção de várias extensões de audio para maior compatibilidade de navegadores</p>
+    <h2>Exemplos:</h2>
+    <h4>Para inserção de um áudio</h4>
+<pre>
+<code>
+    &lt;audio src="midia/Calvin Harris - josh pan.mp3" controls &gt;&lt;/audio&gt;
+</code>
+</pre>
+    <h4>Para inserção de várias extenções</h4>
+<pre>
+<code>
+    &lt;audio preload="metadata" controls&gt;
+        &lt;source src="midia/Calvin Harris - josh pan.mp3" type="audio/mpeg"&gt;
+        &lt;source src="midia/manchetes.wav" type="audio/wave"&gt;
+    &lt;/audio&gt;
+</code>
+</pre>
+    <h1>Vídeos</h1>
+    <p>Conversor de vídeos: <a href="https://handbrake.fr/">HandBrack</a></p>
+    <p>&lt;video&gt; → Título 01</p>
+    <p>controls → Inserir ao lado e dentro da TAG video para exibir o player dentro do site</p>
+    <p>source:src → Para a inserção de várias extensões de vídeo para maior compatibilidade de navegadores</p>
+    <p>poster → Para inserir a Thumb no vídeo</p>
+    <p>width → Para definir o tamanho do vídeo na página</p>
+
+    <h2>Exemplos:</h2>
+    <h4>Para inserção de um único vídeo - Servidor próprio</h4>
+<pre>
+<code>
+    &lt;video poster="imagens/thumb.png" controls src="media/pexels-artem-podrez-7233556.mp4" width="560"&gt;&lt;/video&gt;
+</code>
+</pre>
+<h4>Para inserção de várias extensões de vídeos - Servidor próprio</h4>
+<pre>
+    <code>
+    &lt;video width="560" poster="imagens/thumb.png" controls&gt;
+    &lt;source src="media/pexels-artem-podrez-7233556.mp4" type="video/mp4"&gt;
+    &lt;source src="media/pexels-artem-podrez-7233556.mp4" type="video/webm"&gt;
+    &lt;source src="media/pexels-artem-podrez-7233556.mp4" type="video/ogg"&gt;
+    &lt;/video&gt;
+    </code>
+</pre>
 </body>
 </html>
