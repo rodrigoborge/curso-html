@@ -126,7 +126,7 @@
     &rcub;
     &lt;/style&gt;
     </code>
-</pre>
+    </pre>
     <h2>Várias Páginas</h2>
     Usar a tag <strong>link:css</strong>, clicar em cima do link de página criado e criar uma nova página com base nele. A tag ficará assim
     <pre>
@@ -135,4 +135,21 @@
         </code>
     </pre>
     <p>Com isso já podemos inserir os estilos dentro da folha de estilos e ela passará a valer para todas as páginas que contenham a referência.</p>
+
+    <h1>CSS</h1>
+    <p>Para mexer nas configurações globais do arquivo, é utilizado a tag asterisco *.</p>
+    <p>Para mexer no corpo do arquivo é usada a tag body dentro da sessão head.</p>
+    <p>Toda a tag em css é seguida de chave <strong>{</strong></p>
+    <h2>Cores Gradientes</h2>
+    <p>PAra usar as cores com gradientes no CSS é usada a tag <q>background-image: linear-gradient</q>, em seguida é dada a direção que o gradiente terá, como por exemplo <q>to bottom</q> para ir para o final da página, e em seguida são indicadas as cores, separadas por virula, sem limite de cores.</p>
+    <p>Exemplo de um fundo transparente para o corpo da página:</p>
+    <pre>
+<code>
+    body{
+        background-image: linear-gradient(to bottom, #F24495, #181926);
+        background-attachment: fixed;
+    }
+</code>
+    </pre>
+
 </body>
