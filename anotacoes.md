@@ -152,7 +152,7 @@
 
 <h2>Fontes em CSS</h2>
 <p>Para alterar a fonte no arquivo CSS é usado o comando font-family e selecionada a família de fontes que mais combina com o projeto.</p>
-<p>Caso tenha dúvida sobre as fontes que combinam entre si, é possível consultar o CSS Web Safe Font</p>
+<p>Caso tenha dúvida sobre as fontes que combinam entre si, é possível consultar o <a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp">CSS Web Safe Font</a></p>
 <p>Ou ainda, utilizar após digitar o comando font-family: as teclas ctrl+espaço para que o VS Code sugira algumas famílias de fonte, como no exemplo abaixo</p>
 
 <pre>
