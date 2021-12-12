@@ -155,8 +155,9 @@
 <p>Caso tenha dúvida sobre as fontes que combinam entre si, é possível consultar o CSS Web Safe Font</p>
 <p>Ou ainda, utilizar após digitar o comando font-family: as teclas ctrl+espaço para que o VS Code sugira algumas famílias de fonte, como no exemplo abaixo</p>
 
+<pre>
 <code>
-        body{
+    body{
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
 </code>
