@@ -17,6 +17,7 @@ Repositório do Curso de HTML5 e CSS3 - Curso em Vídeo - Professor Gustavo Guan
     <li>HTML</li>
     <li>CSS</li>
     <li>JavaScript</li>
+    <li>PHP</li>
 </ul>
 <h2>FrameWorks</h2>
 <ul>
