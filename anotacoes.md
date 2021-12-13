@@ -9,7 +9,7 @@
     <p>&#x + → Escolher emoji na <a href="https://emojipedia.org/">Emojipedia</a></p>
     <p>&lt;h1&gt; → Título 01</p>
     <p>link:favicon → Favicon</p>
-    <p>strong → <strong>Negrito</strong>
+    <>strong → <strong>Negrito</strong>
     <p>em → <em>Itálico</em></p>
     <p>mark → <mark>Marca-texto</mark></p>
     <p>small → <smalll>Letra pequena</smalll></p>
@@ -163,5 +163,33 @@
 </code>
 </pre>
 
-<p>No exemplo a família utilizada é a -apple-system
+<p>No exemplo a família utilizada é a -apple-system</p>
+<h4>Tamanho de Fontes</h4>
+
+<h5>Medidas Absolutas:</h5>
+    <ul>
+    <li>Centímetro → cm</li>
+    <li>Milímetro → mm</li>
+    <li>Polegada → in</li>
+    <li>Pixel → px</li>
+    <li>Ponto → pt</li>
+    <li>Paica → pc</li>
+    </ul>
+    
+<p>Nestes casos as apresentações podem ser diferentes. Até a medida de pixel, pois dependendo do dispositivo o tamanho dos pixels variam, como por exemplo as telas retinas da Apple, onde 1 pixel não é 1 pixel, mas sim 1/4 de pixel.</p>
+    
+<h5>Medidas Relativas:</h5>
+    <ul>
+    <li>em → Relativo ao tamanho natural da fonte, que no caso são 16px o padrão</li>
+    <li>ex → Relativo a altura X da fonte</li>
+    <li>rem → Relativo a fonte configurada no body</li>
+    <li>vw → Relativo a largura da view port</li>
+    <li>vh → Relativo a altura da viel port</li>
+    <li>% → Relativo a % inserida</li>
+    </ul>
+    
+<p>Para medida de fonte, é recomendado o uso do px ou em.</p>
+<p><ins>16px geralmente é igual a 1em</ins></p>
+    
+<p><strong>Exemplo:</strong> Se 16px é o tamanho natural da fonte no navegador e é representado por 1em, 2em é igual a 32px</p>
 </body>
