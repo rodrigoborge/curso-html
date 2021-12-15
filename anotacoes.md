@@ -192,4 +192,31 @@
 <p><ins>16px geralmente é igual a 1em</ins></p>
     
 <p><strong>Exemplo:</strong> Se 16px é o tamanho natural da fonte no navegador e é representado por 1em, 2em é igual a 32px</p>
+
+<h5>Peso das Fontes</h5>
+<p>Para determinar o peso da font é usado o comando font-weight, e é possível trabalhar as fontes com os seguintes pesos</p>
+<ul>
+<li>lighter</li>
+<li>normal</li>
+<li>bold</li>
+<li>bolder</li>
+</ul>
+
+<p>Ainda é possível trabalhar com as opções numéricas, que começam em 100 e terminam em 900, ficando assim:</p>
+<ul>
+<li>100 → lighter</li>
+<li>400 → normal</li>
+<li>600 → bold</li>
+<li>800 → bolder</li>
+</ul>
+
+<h5>Itálico no CSS</h5>
+<p>Para deixar a fonte em itálico pelo CSS é preciso usar o comando font-style e usar: italic.</p>
+
+<h5>Sublinhado no CSS</h5>
+<p>Para usar o sublinhado no CSS é preciso usar o comando text-decoration e usar: underline</p>
+
+<h5>Usando o Google Fonts</h5>
+<p>Para importar as fontes do <a href="https://fonts.google.com/">Google Fonts</a>, basta selecionar a fonte desejada, clicar no cubo e copiar o @import, para declarar a fonte é preciso copiar o campo de font-family indicada pelo Google.</p>
+<p>O import precisa ser logo abaixo da tag style, fora do body ou de qualquer outro seletor.</p>
 </body>
