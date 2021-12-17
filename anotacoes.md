@@ -219,4 +219,22 @@
 <h5>Usando o Google Fonts</h5>
 <p>Para importar as fontes do <a href="https://fonts.google.com/">Google Fonts</a>, basta selecionar a fonte desejada, clicar no cubo e copiar o @import, para declarar a fonte é preciso copiar o campo de font-family indicada pelo Google.</p>
 <p>O import precisa ser logo abaixo da tag style, fora do body ou de qualquer outro seletor.</p>
+<h5>Fontes Externas</h5>
+<p>Para adicionar fontes externas é utilizado o comando @font-face dentro da tag style, este comando chama a fonte salva na pasta do servidor. Desta fotma, ficará assim:
+<pre>
+<code>
+@font-face {
+    font-family: 'Chicken';
+    src: url(fontes/ChickenSoup.otf); format('opentype'), url(fontes/ChickenSoup.otf) format('truetype')
+</code>
+</pre>
+
+<p>Tipos de Format</p>
+<li>opentype → otf</li>
+<li>opentype → ttf</li>
+<li>embed-opentype</li>
+<li>truetype-aat → Apple Advanced Typography</li>
+<li>svg</li>
+
+
 </body>
