@@ -18,6 +18,9 @@ Repositório do Curso de HTML5 e CSS3 - Curso em Vídeo - Professor Gustavo Guan
     <li>CSS</li>
     <li>JavaScript</li>
     <li>PHP</li>
+    <li>Consumo de API Rest</li>
+    <li>UX e UI</li>
+    <li>Figma</li>
 </ul>
 <h2>FrameWorks</h2>
 <ul>
@@ -41,4 +44,3 @@ Repositório do Curso de HTML5 e CSS3 - Curso em Vídeo - Professor Gustavo Guan
     <li>Estrutura de dados</li>
     <li>Base de dados</li>
 </ul>
-
