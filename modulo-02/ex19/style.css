@@ -1,0 +1,21 @@
+body{
+    background-color: green;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: azure;
+}
+
+#principal{
+    color: red;
+}
+
+h2{
+    color: aqua;
+}
+
+p{
+    color: beige;
+}
+
