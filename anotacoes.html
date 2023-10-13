@@ -6,7 +6,20 @@
     <title>Anotações</title>
     <style>
         body{
-            color:black
+            background-color: #0d0e14;
+            color: #ffff;
+        }
+        pre{
+            background-color: #171924;
+            border-radius: 15px;
+        }
+        h1{
+            padding: 20px;
+            color: #FF1493;
+        }
+        h2{
+            padding: 15px;
+            color: aqua;
         }
     </style>
 </head>
@@ -104,7 +117,7 @@
     &lt;video poster="imagens/thumb.png" controls src="media/pexels-artem-podrez-7233556.mp4" width="560"&gt;&lt;/video&gt;
 </code>
 </pre>
-<h3>Para inserção de várias extensões de vídeos - Servidor próprio</h3>
+<h2>Para inserção de várias extensões de vídeos - Servidor próprio</h2>
 <pre>
     <code>
     &lt;video width="560" poster="imagens/thumb.png" controls&gt;
@@ -114,6 +127,8 @@
     &lt;/video&gt;
     </code>
 </pre>
+
+
     <h1>CSS</h1>
     <h2>Páginas Únicas</h2>
     <p>Para incluir os estilos CSS o ideal - para páginas únicas - é inserir a tag logo abaixo do título, antes de fechar a seção head</p>
@@ -176,9 +191,9 @@
 </pre>
 
 <p>No exemplo a família utilizada é a -apple-system</p>
-<h4>Tamanho de Fontes</h4>
+<h2>Tamanho de Fontes</h2>
 
-<h5>Medidas Absolutas:</h5>
+<h2>Medidas Absolutas:</h2>
     <ul>
     <li>Centímetro → cm</li>
     <li>Milímetro → mm</li>
@@ -190,7 +205,7 @@
     
 <p>Nestes casos as apresentações podem ser diferentes. Até a medida de pixel, pois dependendo do dispositivo o tamanho dos pixels variam, como por exemplo as telas retinas da Apple, onde 1 pixel não é 1 pixel, mas sim 1/4 de pixel.</p>
     
-<h5>Medidas Relativas:</h5>
+<h2>Medidas Relativas:</h2>
     <ul>
     <li>em → Relativo ao tamanho natural da fonte, que no caso são 16px o padrão</li>
     <li>ex → Relativo a altura X da fonte</li>
@@ -205,7 +220,7 @@
     
 <p><strong>Exemplo:</strong> Se 16px é o tamanho natural da fonte no navegador e é representado por 1em, 2em é igual a 32px</p>
 
-<h5>Peso das Fontes</h5>
+<h2>Peso das Fontes</h2>
 <p>Para determinar o peso da font é usado o comando font-weight, e é possível trabalhar as fontes com os seguintes pesos</p>
 <ul>
 <li>lighter</li>
@@ -222,16 +237,16 @@
 <li>800 → bolder</li>
 </ul>
 
-<h5>Itálico no CSS</h5>
+<h2>Itálico no CSS</h2>
 <p>Para deixar a fonte em itálico pelo CSS é preciso usar o comando font-style e usar: italic.</p>
 
-<h5>Sublinhado no CSS</h5>
+<h2>Sublinhado no CSS</h2>
 <p>Para usar o sublinhado no CSS é preciso usar o comando text-decoration e usar: underline</p>
 
-<h5>Usando o Google Fonts</h5>
+<h2>Usando o Google Fonts</h2>
 <p>Para importar as fontes do <a href="https://fonts.google.com/">Google Fonts</a>, basta selecionar a fonte desejada, clicar no cubo e copiar o @import, para declarar a fonte é preciso copiar o campo de font-family indicada pelo Google.</p>
 <p>O import precisa ser logo abaixo da tag style, fora do body ou de qualquer outro seletor.</p>
-<h5>Fontes Externas</h5>
+<h2>Fontes Externas</h2>
 <p>Para adicionar fontes externas é utilizado o comando @font-face dentro da tag style, este comando chama a fonte salva na pasta do servidor. Desta forma, ficará assim:
     <pre>
     <code>
@@ -241,7 +256,7 @@
     </code>
     </pre>
 
-    <p>Tipos de Formatos</p>
+    <h2>Tipos de Formatos</h2>
     <li>opentype → otf</li>
     <li>opentype → ttf</li>
     <li>embed-opentype</li>
