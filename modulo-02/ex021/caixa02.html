@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gray;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            display: flex;
+            background-color: black;
+        }
+
+        li{
+            margin: 10px;
+            list-style: none;
+        }
+
+        li > a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        li > a:hover{
+            color: red;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        article{
+            background-color: lightgrey;
+            margin: 10px;
+        }
+
+        article > aside{
+            background: gray;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <li><a href="">Home</a></li>
+            <li><a href="">Sobre</a></li>
+            <li><a href="">Servicos</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contato</a></li>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <article>
+            <h1>Esportes</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eius odio ratione deleniti at minima, rerum, veniam reprehenderit quia ea doloribus fuga veritatis pariatur. Dolore aperiam a soluta culpa assumenda nulla! Doloremque, iste eum? Animi quo eveniet, porro debitis alias ad accusamus! Illum fugiat enim voluptate ab, ipsum expedita maxime.</p>
+            <aside>
+                <p>Artigo escrito por alguém</p>
+            </aside>
+            </article>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id officiis tenetur quis voluptatem sint accusamus maxime fuga temporibus placeat consequuntur nam unde ad eaque, itaque perspiciatis suscipit, rerum, fugiat maiores!</p>
+                <aside>
+                    <p>Artigo escrito por Jose da Silva</p>
+                </aside>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido por 2023</p>
+    </footer>
+</body>
+</html>
