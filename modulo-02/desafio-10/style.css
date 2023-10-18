@@ -24,8 +24,9 @@ header{
 
 header > h1{
     text-transform: uppercase;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     text-shadow: 1px 3px#1A5C38;
+    font-size: 2.5rem;
 }
 
 nav{
