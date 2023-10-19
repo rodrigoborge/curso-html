@@ -1,6 +1,6 @@
 @font-face{
     font-family: 'idroid';
-    src: url(./fontes/idroid.otf) format('truetype');
+    src: url(/modulo-02/desafio-10/fonts/idroid.otf) format('truetype');
 }
 
 body{
