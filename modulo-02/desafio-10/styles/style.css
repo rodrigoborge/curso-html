@@ -99,9 +99,10 @@ section > p{
     background-color: #1A5C38;
     padding: 20px;
     margin: 0px;
+    margin-bottom: 20px;
 }
 
-.aprender{
+aside{
     text-align: left;
     background-color: #C5EBD6;
     padding: 10px;
@@ -109,7 +110,7 @@ section > p{
     border-radius: 10px;
 }
 
-.aprender > h2{
+aside > h2{
     background-color: #2FA866;
     color: #fff;
     padding: 10px;
@@ -118,7 +119,7 @@ section > p{
     font-size: medium;
 }
 
-.aprender > ul{
+aside > ul{
     columns: 2;
     list-style: "\2713";
 }
