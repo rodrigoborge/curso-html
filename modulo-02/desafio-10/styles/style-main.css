@@ -25,7 +25,7 @@
 }
 
 body {
-    background-color: var(--cor0);
+    background-color: var(--cor1);
     font-family: var(--fonte-padrao);
 }
 
@@ -47,7 +47,14 @@ nav{
 }
 
 main {
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 30px;
     background-color: var(--cor6);
+    box-shadow: 0px 0px 10px var(--cor5);
+    border-radius: 0px 0px 10px 10px;
 }
 
 main h1 {
@@ -58,6 +65,16 @@ main h1 {
 main h2 {
     color: var(--cor5);
     font-family: var(--fonte-android);
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    width: 50%;
+    display: block;
+    margin: auto;
 }
 
 footer {
