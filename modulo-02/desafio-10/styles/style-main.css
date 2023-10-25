@@ -46,6 +46,7 @@ header > h1 {
   padding-top: 30px;
   margin-bottom: 20px;
   text-shadow: 2px 2px 0px var(--cor5);
+  font-weight: normal;
 }
 
 header > p {
@@ -96,6 +97,7 @@ main h1 {
   color: var(--cor5);
   font-family: var(--fonte-android);
   font-size: 1.8em;
+  font-weight: normal;
 }
 
 main h2 {
@@ -103,6 +105,7 @@ main h2 {
   font-family: var(--fonte-android);
   text-indent: 10px;
   background-image: linear-gradient(to right, var(--cor1), transparent);
+  font-weight: normal;
 }
 
 main p {
