@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anotações</title>
+    <style>
+        * {
+            padding: 0px;
+            margin-left: 1em;
+        }
+
+        body{
+            background-color: #0d0e14;
+            color: #ffff;
+        }
+        pre{
+            background-color: #171924;
+            border-radius: 15px;
+        }
+        h1{
+            padding: 0.5em 0em 0em 0em;
+            color: #FF1493;
+            text-transform: uppercase;
+        }
+        h2{
+            padding: 0.5em 0em 0em 0em;
+            color: aqua;
+            text-transform: uppercase;
+        }
+        a{
+            color: yellow;
+        }
+
+        a:hover{
+            color: red;
+        }
+
+        mark{
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Anotações - Módulo 01</h1>
+    <h1>TAGs</h1>
+    <p>! → Indicar que o documento é um HTML</p>
+    <p>&lt;h1&gt; → Título 01</p>
+    <p>&lt;hr&gt; → Linha horizontal</p>
+    <p>&lt;p&gt; → Parágrafo</p>
+    <p>&lt;br&gt; → Quebra de linha</p>
+    <p>&#x + → Escolher emoji na <a href="https://emojipedia.org/">Emojipedia</a></p>
+    <p>&lt;h1&gt; → Título 01</p>
+    <p>link:favicon → Favicon</p>
+    <>strong → <strong>Negrito</strong>
+    <p>em → <em>Itálico</em></p>
+    <p>mark → <mark>Marca-texto</mark></p>
+    <p>small → <smalll>Letra pequena</smalll></p>
+    <p>del → <del>Texto taxado / excluido</del></p>
+    <p>ins → <ins>Texto sublinhado</ins></p>
+    <p>sup → Texto sobrescrito → X<sup>2</sup></p>
+    <p>sub → Texto subscrito → H<sub>2</sub>O</p>
+    <p>code → <code>Fonte para código</code></p>
+    <p>pre → Escrever com identação</p>
+    <p>q → <q>Aspas</q></p>
+    <p>blockquote → <blockquote>Citação</blockquote></p>
+    <p>abbr → <abbr title="Use esta TAG para abreviações">Abreviação</abbr></p>
+    <p>bdo dir="rtr" → Texto invertido → <bdo dir="rtl">Texto invertido</bdo></p>
+    <p>ol → Lista ordenada</p>
+    <p>ul → Lista não ordenada</p>
+    <p>li → Listar</p>
+    <h1>Links</h1>
+    <p>link interno ou externo → a</p>
+    <p>target="_blank" → Abrir link em uma nova aba</p>
+    <p>rel="external" → Referência externa</p>
+    <p>../ → Voltar para pasta anterior</p>
+    <h1>Simbolos</h1>
+    <p>Para escrever simbolos no código como &lt;, &gt;, &amp;, &cent;... Pesquisar por <a href="https://www.w3schools.com/html/html_entities.asp">HTML Entities</a>. </p>
+    <h1>Imagens</h1>
+    <p>JPEG → Mais leve</p>
+    <p>PNG → Transparência</p>
+    <p>GIF → Transparência + Animação</p>
+    <h1>Atalhos do Visual Code</h1>
+    <p>ctrl+shift+P → Insere a TAG no texto selecionado</p>
+    <ul>
+        <li>Para configurar precisa ir em pesquisar e procurar por Emmet: <em>Wrap With Abbreviation</em></li>
+    <p>Word Wrap → Para quebra de linha automática</p>
+    </ul>
+    <h1>Imagens Dinâmicas</h1>
+    <p>&lt;picture&gt; → Para informar o espaçõ de imagem</p>
+    <p>Source Media Yype → Para informar os tipos e tamanhos de imagenss</p>
+    <p>As mídias precisam ser inseridas em ordem, da menor para a maior, sendo que a maior (padrão) ficará na Tag principal &lt;img&gt;</p>
+    <p>Então o código ficará assim:</p>
+    <pre>
+        <code>
+    &lt;picture&gt;
+        &lt;source media="(max-width: 750px)" srcset="imagens/foto-p.jpg" type="image/jpg"&gt;
+        &lt;source media="(max-width: 1050px)" srcset="imagens/foto-m.jpg" type="image/jpg"&gt;
+        &lt;img src="imagens/foto-g.jpg" alt="Imagem flexível"&gt;
+    &lt;/picture&gt;
+        </code>
+    </pre>
+    <h1>Áudios</h1>
+    <p>&lt;audio&gt; → TAG para inserção de um arquivo direto</p>
+    <p>controls → Inserir ao lado e dentro da TAG audio para exibir o player dentro do site</p>
+    <p>source:src → Para a inserção de várias extensões de audio para maior compatibilidade de navegadores</p>
+    <h2>Exemplos:</h2>
+    <h3>Para inserção de um áudio</h3>
+<pre>
+<code>
+    &lt;audio src="midia/Calvin Harris - josh pan.mp3" controls &gt;&lt;/audio&gt;
+</code>
+</pre>
+    <h3>Para inserção de várias extenções</h3>
+<pre>
+<code>
+    &lt;audio preload="metadata" controls&gt;
+        &lt;source src="midia/Calvin Harris - josh pan.mp3" type="audio/mpeg"&gt;
+        &lt;source src="midia/manchetes.wav" type="audio/wave"&gt;
+    &lt;/audio&gt;
+</code>
+</pre>
+    <h1>Vídeos</h1>
+    <p>Conversor de vídeos: <a href="https://handbrake.fr/">HandBrack</a></p>
+    <p>&lt;video&gt; → Título 01</p>
+    <p>controls → Inserir ao lado e dentro da TAG video para exibir o player dentro do site</p>
+    <p>source:src → Para a inserção de várias extensões de vídeo para maior compatibilidade de navegadores</p>
+    <p>poster → Para inserir a Thumb no vídeo</p>
+    <p>width → Para definir o tamanho do vídeo na página</p>
+
+    <h2>Exemplos:</h2>
+    <h3>Para inserção de um único vídeo - Servidor próprio</h3>
+<pre>
+<code>
+    &lt;video poster="imagens/thumb.png" controls src="media/pexels-artem-podrez-7233556.mp4" width="560"&gt;&lt;/video&gt;
+</code>
+</pre>
+<h2>Para inserção de várias extensões de vídeos - Servidor próprio</h2>
+<pre>
+    <code>
+    &lt;video width="560" poster="imagens/thumb.png" controls&gt;
+    &lt;source src="media/pexels-artem-podrez-7233556.mp4" type="video/mp4"&gt;
+    &lt;source src="media/pexels-artem-podrez-7233556.mp4" type="video/webm"&gt;
+    &lt;source src="media/pexels-artem-podrez-7233556.mp4" type="video/ogg"&gt;
+    &lt;/video&gt;
+    </code>
+</pre>
+
+    <h1>Módulo 02</h1>
+
+    <h1>CSS</h1>
+    <h2>Páginas Únicas</h2>
+    <p>Para incluir os estilos CSS o ideal - para páginas únicas - é inserir a tag logo abaixo do título, antes de fechar a seção head</p>
+    <p>A tag é aberta com &lt;style&gt; e abaixo dela é declarado o nome da seção e é aberta uma chave {, com isso começamos a digitar os valores dos estilos, como por exemplo:</p>
+    <pre>
+    <code>
+    &lt;style&gt;
+    body&lcub;
+        background-color&colon; darkturquoise;
+        font-family&colon; sans-serif&semi;
+        font-size&colon; 20px&semi;
+    &rcub;
+    h1&lcub;
+        color&colon; dodgerblue;
+        background-color&colon; ghostwhite&semi;
+    &rcub;
+    h2&lcub;
+        color&colon; forestgreen&semi;
+    &rcub;
+    p&lcub;
+        text-align&colon; justify&semi;
+    &rcub;
+    &lt;/style&gt;
+    </code>
+    </pre>
+    <h2>Várias Páginas</h2>
+    Usar a tag <strong>link:css</strong>, clicar em cima do link de página criado e criar uma nova página com base nele. A tag ficará assim
+    <pre>
+        <code>
+    &lt;link rel="stylesheet" href="style.css"&gt;
+        </code>
+    </pre>
+    <p>Com isso já podemos inserir os estilos dentro da folha de estilos e ela passará a valer para todas as páginas que contenham a referência.</p>
+    <p>Para mexer nas configurações globais do arquivo, é utilizado a tag asterisco *.</p>
+    <p>Para mexer no corpo do arquivo é usada a tag body dentro da sessão head.</p>
+    <p>Toda a tag em css é seguida de chave <strong>{</strong></p>
+    <h2>Cores Gradientes</h2>
+    <p>Para usar as cores com gradientes no CSS é usada a tag <q>background-image: linear-gradient</q>, em seguida é dada a direção que o gradiente terá, como por exemplo <q>to bottom</q> para ir para o final da página, e em seguida são indicadas as cores, separadas por virula, sem limite de cores.</p>
+    <p>Exemplo de um fundo transparente para o corpo da página:</p>
+    <pre>
+<code>
+    body{
+        background-image: linear-gradient(to bottom, #F24495, #181926);
+        background-attachment: fixed;
+    }
+</code>
+    </pre>
+
+<h2>Fontes em CSS</h2>
+<p>Para alterar a fonte no arquivo CSS é usado o comando font-family e selecionada a família de fontes que mais combina com o projeto.</p>
+<p>Caso tenha dúvida sobre as fontes que combinam entre si, é possível consultar o <a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp">CSS Web Safe Font</a></p>
+<p>Ou ainda, utilizar após digitar o comando font-family: as teclas ctrl+espaço para que o VS Code sugira algumas famílias de fonte, como no exemplo abaixo</p>
+
+<pre>
+<code>
+    body{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+</code>
+</pre>
+
+<p>No exemplo a família utilizada é a -apple-system</p>
+<h2>Tamanho de Fontes</h2>
+
+<h2>Medidas Absolutas:</h2>
+    <ul>
+    <li>Centímetro → cm</li>
+    <li>Milímetro → mm</li>
+    <li>Polegada → in</li>
+    <li>Pixel → px</li>
+    <li>Ponto → pt</li>
+    <li>Paica → pc</li>
+    </ul>
+    
+<p>Nestes casos as apresentações podem ser diferentes. Até a medida de pixel, pois dependendo do dispositivo o tamanho dos pixels variam, como por exemplo as telas retinas da Apple, onde 1 pixel não é 1 pixel, mas sim 1/4 de pixel.</p>
+    
+<h2>Medidas Relativas:</h2>
+    <ul>
+    <li>em → Relativo ao tamanho natural da fonte, que no caso são 16px o padrão</li>
+    <li>ex → Relativo a altura X da fonte</li>
+    <li>rem → Relativo a fonte configurada no body</li>
+    <li>vw → Relativo a largura da view port</li>
+    <li>vh → Relativo a altura da viel port</li>
+    <li>% → Relativo a % inserida</li>
+    </ul>
+    
+<p>Para medida de fonte, é recomendado o uso do px ou em.</p>
+<p><ins>16px geralmente é igual a 1em</ins></p>
+    
+<p><strong>Exemplo:</strong> Se 16px é o tamanho natural da fonte no navegador e é representado por 1em, 2em é igual a 32px</p>
+
+<h2>Peso das Fontes</h2>
+<p>Para determinar o peso da font é usado o comando font-weight, e é possível trabalhar as fontes com os seguintes pesos</p>
+<ul>
+<li>lighter</li>
+<li>normal</li>
+<li>bold</li>
+<li>bolder</li>
+</ul>
+
+<p>Ainda é possível trabalhar com as opções numéricas, que começam em 100 e terminam em 900, ficando assim:</p>
+<ul>
+<li>100 → lighter</li>
+<li>400 → normal</li>
+<li>600 → bold</li>
+<li>800 → bolder</li>
+</ul>
+
+<h2>Itálico no CSS</h2>
+<p>Para deixar a fonte em itálico pelo CSS é preciso usar o comando font-style e usar: italic.</p>
+
+<h2>Sublinhado no CSS</h2>
+<p>Para usar o sublinhado no CSS é preciso usar o comando text-decoration e usar: underline</p>
+
+<h2>Usando o Google Fonts</h2>
+<p>Para importar as fontes do <a href="https://fonts.google.com/">Google Fonts</a>, basta selecionar a fonte desejada, clicar no cubo e copiar o @import, para declarar a fonte é preciso copiar o campo de font-family indicada pelo Google.</p>
+<p>O import precisa ser logo abaixo da tag style, fora do body ou de qualquer outro seletor.</p>
+<h2>Fontes Externas</h2>
+<p>Para adicionar fontes externas é utilizado o comando @font-face dentro da tag style, este comando chama a fonte salva na pasta do servidor. Desta forma, ficará assim:
+    <pre>
+    <code>
+    @font-face {
+        font-family: 'Chicken';
+        src: url(fontes/ChickenSoup.otf); format('opentype'), url(fontes/ChickenSoup.otf) format('truetype')
+    </code>
+    </pre>
+
+    <h2>Tipos de Formatos</h2>
+    <li>opentype → otf</li>
+    <li>opentype → ttf</li>
+    <li>embed-opentype</li>
+    <li>truetype-aat → Apple Advanced Typography</li>
+    <li>svg</li>
+
+<h2>Como identificar fonte usadas no site</h2>
+<ul>
+    <li><strong>Extensão no Chrome:</strong> Fonts Ninja</li>
+</ul>
+
+<h2>Como identificar fontes dentro de imagens</h2>
+<h4>Sites para utilizar</h4>
+<ul>
+    <li><a href="whatfontis.com">What Font Is</a></li>
+    <li><a href="fontsquirrel.com">Font Squirrel</a></li>
+    <li><a href="myfonts.com">My Fonts</a></li>
+</ul>
+
+<h1>Alinhamento de textos com CSS</h1>
+<p>Exitesm 3 formas de centralizar textos com CSS</p>
+<ul>
+    <li>
+        Centralizado
+        <pre>
+            <code>
+                text-align: center;
+            </code>
+        </pre>
+    </li>
+    <li>
+        A direita
+        <pre>
+            <code>
+                text-align: rigth;
+            </code>
+        </pre>
+    </li>
+    <li>
+        A esquerda
+        <pre>
+            <code>
+                text align: left;
+            </code>
+        </pre>
+    </li>
+</ul>
+
+<h1>Seletores Personalizados</h1>
+<h2>As diferenças entre ID e CLASS</h2>
+<ul>
+    <li><strong>ID:</strong> ID só pode ser utilizado uma unica vez</li>
+    <li><strong>Class:</strong> Pode ter em mais de um elemento</li>
+</ul>
+<p>ID sobrepõe as configuracoes de classe</p>
+
+<h1>Pseudo Classes & Pseudo Elementos</h1>
+
+<ul>
+    <li><strong>#</strong> id</li>
+    <li><strong>.</strong> class</li>
+    <li><strong>:</strong> pseudo-class</li>
+    <li><strong>::</strong> pseudo-elements</li>
+    <li><strong>></strong> children</li>
+</ul>
+
+<h1>Modelo de Caixas - Box Model</h1>
+<h2>Anatomia de uma Caixa</h2>
+<ul>
+    <li><strong>Height: </strong>Altura</li>
+    <li><strong>Width: </strong>Largura</li>
+    <li><strong>Border: </strong>Borda</li>
+    <li><strong>Padding: </strong>Preenchimento do espaço interno</li>
+    <li><strong>Margin: </strong> Preenchimento espaço externo</li>
+    <li><strong>Outline: </strong>Contorno além da borda</li>
+</ul>
+
+<h2>Tipos de Caixa</h2>
+<ul>
+    <li><strong>box-level: </strong>Se inicia sempre em uma linha nova e ocupa sempre 100% da area do navegador</li>
+        <ul>
+            <li><strong>Exemplos</strong></li>
+                <ul>
+                    <li>div</li>
+                    <li>h1-h6</li>
+                    <li>p</li>
+                    <li>main</li>
+                    <li>header</li>
+                    <li>nav</li>
+                    <li>article</li>
+                    <li>aside</li>
+                    <li>footer</li>
+                    <li>form</li>
+                    <li>video</li>
+                </ul>
+    </ul>
+        <li><strong>inline-level: </strong>Fica sempre na mesma linha e dentro da linha, não quebra linha</li>
+    <ul>
+            <li><strong>Exemplo:</strong></li>
+                <ul>
+                    <li>span</li>
+                    <li>a</li>
+                    <li>code</li>
+                    <li>small</li>
+                    <li>strong</li>
+                    <li>em</li>
+                    <li>sup - sub</li>
+                    <li>label</li>
+                    <li>button</li>
+                    <li>input</li>
+                    <li>select</li>
+                </ul>
+    </ul>   
+</ul>
+
+<h1>Posicionamento</h1>
+<h2>Caixa</h2>
+<p><strong>Margin: </strong>auto -> margin: auto deixa o box exatamente no centro do navegador</p>
+
+<h1>Grouping Tags</h1>
+<h2>Novas tags HTML5</h2>
+<p>As tags abaixo são interpretadas como divs pelo navegador, porém são muito mais benéfiocas pensando pelo lado dos mecanismos de buscas. As tags são:</p>
+<ul>
+    <li>Header</li>
+    <li>Main</li>
+    <li>Footer</li>
+</ul>
+<h1>Módulo 03</h1>
+<h1>Repositórios no Github</h1>
+
+</body>
+</html>

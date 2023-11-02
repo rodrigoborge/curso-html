@@ -1,0 +1,51 @@
+body{
+    background-color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+h1{
+    color: azure;
+}
+
+#principal{
+    color: red;
+    background-color: black;
+    padding: 15px;
+    text-align: center;
+}
+
+.topicos{
+    margin-left: 10px;
+}
+
+h2{
+    color: aqua;
+    text-indent: 16px;
+}
+
+p{
+    color: beige;
+    text-indent: 10px;
+    text-align: justify;
+    margin: 0px 10px 0px 10px;
+}
+
+.basico{
+    background-color: yellow;
+    color: black;
+}
+
+.intermediario{
+    background-color: blueviolet;
+    color: black;
+}
+
+.avancado{
+    background-color: red;
+    color: black;
+}
+.destaque{
+    background-color: coral;
+    color: white;
+}

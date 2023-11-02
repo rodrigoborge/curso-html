@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "idroid";
+  src: url(/modulo-02/desafio-10/fonts/idroid.otf) format("truetype");
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background: #84e1ad;
+}
+
+header {
+  background-color: green;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  color: #fff;
+  margin: 0px;
+  padding: 30px 10px 1px 10px;
+  text-align: center;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    180deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(26, 92, 56, 1) 100%
+  );
+  box-shadow: 2px 2px 20px #1a5c38;
+}
+
+header > h1 {
+  text-transform: uppercase;
+  font-family: "Bebas Neue", sans-serif;
+  text-shadow: 1px 3px#1A5C38;
+  font-size: 2.5rem;
+}
+
+nav {
+  text-align: left;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+nav > a {
+  margin-left: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav > a:hover {
+  margin-left: 10px;
+  color: #84e1ad;
+  text-decoration: none;
+}
+
+main {
+  background-color: #fff;
+  margin: auto;
+  padding: 10px;
+  width: 800px;
+  align-items: center;
+}
+
+section {
+  text-align: center;
+  margin: 10px;
+  text-indent: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section > h1 {
+  font-family: "idroid";
+  font-size: 1.8rem;
+  color: #1a5c38;
+  text-align: left;
+}
+
+section > h2 {
+  font-family: "idroid";
+  text-indent: 5px;
+  text-align: left;
+  color: #1a5c38;
+  background: rgb(183, 245, 211);
+  background: linear-gradient(
+    90deg,
+    rgba(183, 245, 211, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+section > p {
+  text-align: left;
+}
+
+.link {
+  font-weight: 800;
+  color: #1a5c38;
+  text-decoration: none;
+}
+
+.link:hover {
+  font-weight: 700;
+  color: #2fa866;
+  text-decoration: none;
+}
+
+.video {
+  text-align: center;
+  background-color: #1a5c38;
+  padding: 20px;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+
+aside {
+  text-align: left;
+  background-color: #c5ebd6;
+  padding: 10px;
+  border: 0px;
+  border-radius: 10px;
+}
+
+aside > h2 {
+  background-color: #2fa866;
+  color: #fff;
+  padding: 10px;
+  margin: -10px;
+  border-radius: 10px 10px 0px 0px;
+  font-size: medium;
+}
+
+aside > ul {
+  columns: 2;
+  list-style: "\2713";
+}
+
+footer {
+  background-color: #1a5c38;
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 0.8rem;
+  text-align: center;
+}
