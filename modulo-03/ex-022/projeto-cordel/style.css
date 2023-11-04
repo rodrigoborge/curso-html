@@ -75,3 +75,23 @@
     width: 400px;
 
 }
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--cor01);
+    color: var(--cor02);
+    font-family: var(--fonte01);
+}
+
+footer a {
+    font-family: var(--fonte01);
+    color: var(--cor02);
+    text-decoration: none;
+}
+
+footer a:hover {
+    font-family: var(--fonte01);
+    color: var(--cor02);
+    text-decoration: underline;
+}
