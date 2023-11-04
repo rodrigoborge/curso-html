@@ -32,3 +32,11 @@ body {
     font-family: var(--fonte01);
     font-size: 0.5em;
  }
+
+.parte01 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-left: 20px;
+    font-family: var(--fonte03);
+    font-size: 2em;
+}
