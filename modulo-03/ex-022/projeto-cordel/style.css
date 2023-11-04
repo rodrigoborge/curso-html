@@ -6,6 +6,7 @@
     --fonte03: 'Sriracha', cursive;
     --cor01: #000000;
     --cor02: #ffffff;
+    --cor03: rgba(0,0,0,0.5)
 
 }
 
@@ -13,10 +14,6 @@
     padding: 0px;
     margin: 0px;
 }
-
-body {
-
- }
 
  header {
     font-family: var(--fonte02);
@@ -33,10 +30,48 @@ body {
     font-size: 0.5em;
  }
 
-.parte01 {
+.semfundo {
     padding-top: 60px;
     padding-bottom: 60px;
     margin-left: 20px;
     font-family: var(--fonte03);
     font-size: 2em;
+}
+
+.parte02 {
+    background-image: url(https://professorguanabara.github.io/projeto-cordel/imagens/background001.jpg);
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    padding: 60px 0px 60px 0px;
+}
+
+.parte02 p{
+    margin-left: 20px;
+    font-family: var(--fonte03);
+    color: var(--cor02);
+    font-size: 2em;
+    background-color: var(--cor03);
+    width: 400px;
+
+}
+
+.parte04 {
+    background-image: url(https://professorguanabara.github.io/projeto-cordel/imagens/background002.jpg);
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    padding: 60px 0px 60px 0px;
+}
+
+.parte04 p{
+    margin-left: 20px;
+    font-family: var(--fonte03);
+    color: var(--cor02);
+    font-size: 2em;
+    background-color: var(--cor03);
+    width: 400px;
+
 }
