@@ -49,7 +49,7 @@
 }
 
 .parte02 {
-    background-image: url(https://professorguanabara.github.io/projeto-cordel/imagens/background001.jpg);
+    background-image: url(./images/background001.jpg);
     background-position: center center;
     background-size:cover;
     background-repeat: no-repeat;
@@ -68,7 +68,7 @@
 }
 
 .parte04 {
-    background-image: url(https://professorguanabara.github.io/projeto-cordel/imagens/background002.jpg);
+    background-image: url(./images/background002.jpg);
     background-position: center center;
     background-size:cover;
     background-repeat: no-repeat;
