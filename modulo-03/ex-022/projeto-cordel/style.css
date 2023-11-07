@@ -9,6 +9,14 @@
     --cor03: rgba(0,0,0,0.5)
 }
 
+dark-mode:root {
+    --fonte01: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte02: 'Passion One', sans-serif;
+    --fonte03: 'Sriracha', cursive;
+    --cor01: #000000;
+    --cor02: #444444;
+    --cor03: rgba(0,0,0,0.5)
+}
 
 
 * {
