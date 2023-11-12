@@ -1,30 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap");
 
 :root {
     --fonte01: Verdana, Geneva, Tahoma, sans-serif;
-    --fonte02: 'Passion One', sans-serif;
-    --fonte03: 'Sriracha', cursive;
+    --fonte02: "Passion One", sans-serif;
+    --fonte03: "Sriracha", cursive;
     --cor01: #000000;
     --cor02: #ffffff;
-    --cor03: rgba(0,0,0,0.5)
+    --cor03: rgba(0, 0, 0, 0.5);
 }
 
 dark-mode:root {
     --fonte01: Verdana, Geneva, Tahoma, sans-serif;
-    --fonte02: 'Passion One', sans-serif;
-    --fonte03: 'Sriracha', cursive;
+    --fonte02: "Passion One", sans-serif;
+    --fonte03: "Sriracha", cursive;
     --cor01: #000000;
     --cor02: #444444;
-    --cor03: rgba(0,0,0,0.5)
+    --cor03: rgba(0, 0, 0, 0.5);
 }
-
 
 * {
     padding: 0px;
     margin: 0px;
 }
 
- header {
+header {
     font-family: var(--fonte02);
     margin: auto;
     text-align: center;
@@ -32,22 +31,22 @@ dark-mode:root {
     color: var(--cor02);
     padding: 80px;
     font-size: 2.5em;
- }
+}
 
- header p {
+header p {
     font-family: var(--fonte01);
     font-size: 0.5em;
- }
+}
 
- header p a {
+header p a {
     color: var(--cor02);
     text-decoration: none;
- }
+}
 
- header p a:hover {
+header p a:hover {
     color: var(--cor02);
     text-decoration: underline;
- }
+}
 
 .semfundo {
     padding-top: 60px;
@@ -60,39 +59,37 @@ dark-mode:root {
 .parte02 {
     background-image: url(./images/background001.jpg);
     background-position: center center;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-attachment:fixed;
+    background-attachment: fixed;
     padding: 60px 0px 60px 0px;
 }
 
-.parte02 p{
+.parte02 p {
     margin-left: 20px;
     font-family: var(--fonte03);
     color: var(--cor02);
     font-size: 2em;
     background-color: var(--cor03);
     width: 400px;
-
 }
 
 .parte04 {
     background-image: url(./images/background002.jpg);
     background-position: center center;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-attachment:fixed;
+    background-attachment: fixed;
     padding: 60px 0px 60px 0px;
 }
 
-.parte04 p{
+.parte04 p {
     margin-left: 20px;
     font-family: var(--fonte03);
     color: var(--cor02);
     font-size: 2em;
     background-color: var(--cor03);
     width: 400px;
-
 }
 
 footer {
