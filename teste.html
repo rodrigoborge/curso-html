@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Banner Popup</title>
+  <style>
+    /* Estilos CSS do banner */
+    .banner-popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #fafafa;
+      width: 400px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      z-index: 9999;
+      display: none;
+    }
+    .banner-popup .column {
+      display: inline-block;
+      vertical-align: top;
+      width: 50%;
+      padding: 10px;
+    }
+    .banner-popup label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .banner-popup input[type="text"],
+    .banner-popup input[type="email"] {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ddd;
+      margin-bottom: 10px;
+    }
+    .banner-popup img {
+      width: 100%;
+      height: auto;
+    }
+    .banner-popup .submit-button {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Elemento de exibição do banner -->
+  <div id="banner" class="banner-popup">
+    <div class="column">
+      <h2>Inscreva-se na nossa newsletter</h2>
+      <form id="newsletter-form">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <div class="submit-button">
+          <input type="submit" value="Inscrever">
+        </div>
+      </form>
+    </div>
+    <div class="column">
+      <img src="./modulo-03/ex-022/images/pattern002.png" alt="Imagem do banner">
+    </div>
+  </div>
+
+  <script>
+    // Função para exibir o banner popup
+    function showBanner() {
+      document.getElementById("banner").style.display = "block";
+    }
+
+    // Função para ocultar o banner popup
+    function hideBanner() {
+      document.getElementById("banner").style.display = "none";
+    }
+
+    // Evento para exibir o banner quando a página é carregada
+    window.addEventListener("load", function() {
+      showBanner();
+    });
+
+    // Evento para ocultar o banner quando o formulário é enviado
+    document.getElementById("newsletter-form").addEventListener("submit", function(event) {
+      event.preventDefault(); // Impede o envio do formulário
+      hideBanner();
+    });
+  </script>
+</body>
+</html>
